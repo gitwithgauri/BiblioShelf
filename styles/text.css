@@ -1,0 +1,34 @@
+.video-title {
+  font-family:Arial;
+  font-size: 18px;
+  font-weight: bold;
+  width: 300px;
+  line-height: 24px;
+  margin-bottom:5px;
+
+
+}
+.video-stats{
+  font-family: Arial;
+  font-size: 14px;
+  color: rgb(96,96,96);
+  margin-bottom: 100px;
+}
+  .apple-text{
+    font-family: Arial;
+    font-size: 14px;
+    background-color: rgb(227,65,64);
+    color : white;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+   .example:hover{
+    text-decoration: underline;
+
+   }
+    .example{
+      cursor: pointer;
+     }
+    
+  }

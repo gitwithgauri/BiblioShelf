@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PotterHeads - BiblioShelf</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/stylesproject/potterheads.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="biblioupdate.html">
+        <img class="logo" src="/logos/B2.JPG">
+    </a>
+    </div>
+    <div class="nav-search">
+        <input class="search-bar" type="text" placeholder="Search Books">
+        <button class="search-button">
+            <img class="search-icon" src="/icons/search.svg">
+        </button>
+    </div>
+    <div class="nav-links">
+        <a href="biblioupdate.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Categories</a>
+            <div class="dropdown-content">
+                <a href="fiction.html">Fiction</a>
+                <a href="romance.html">Romance</a>
+                <a href="potterheads.html">PotterHeads </a>
+                <a href="selfhelp.html">Self Help </a>
+            </div>
+        </div>
+        <div class="dropdown">
+        <a href="awardwinners.html">Award Winners</a>
+        
+            
+            </div>
+      
+        <div class="dropdown">
+        <a href="authores.html">Authors</a>
+        
+    
+    
+        <a href="contact2.html">Contact Us</a>
+        <a href="cart.html">
+            
+         🛒 <span id="cart-count">0</span>
+          
+        </a>
+        
+
+<button id="theme-toggle" class="mode">🌙 Dark Mode</button>
+    
+</div>
+</nav>
+
+
+
+  
+
+    <div class= " book-container">
+      
+      
+        <h2 class="section-title"> Harry Potter Edition  </h2>
+        <div class="sorting-buttons">
+          <button id="sortAscending" class="hehe">Sort by Price (Low to High)</button>
+          <button id="sortDescending" class="hehe">Sort by Price (High to Low)</button>
+  
+      </div>
+  
+       
+        <div class="book-grid" >
+            <div class="book-card" data-price="385">
+                <img src="/potterheads/hp1.jpg" >
+                <h3>Harry Potter and the Sorcerer's Stone</h3>
+                <p><strong>₹385</strong></p>
+                <button class="button" onclick="addToCart('Harry Potter and the Sorcerers Stone')">Add to Cart</button>
+                <button class="button" style=" background:#1E3A5F;">Read Online</button>
+            </div>
+            <div class="book-card" data-price="375">
+                <img src="/potterheads/hp2.jpg" >
+                <h3>Harry Potter and the Chamber of Secrets</h3>
+              
+                <p><strong>₹375</strong></p>
+                <button class="button" onclick="addToCart('Harry Potter and the Chamber of Secrets')">Add to Cart</button>
+                <button class="button" style="background: #1E3A5F;">Read Online</button>
+            </div>
+            <div class="book-card" data-price="355">
+              <img src="/potterheads/hp3.jpg" >
+              <h3>Harry Potter and the Prisoner of Azkaban</h3>
+           
+              <p><strong>₹355</strong></p>
+              <button class="button" onclick="addToCart('Harry Potter and the Prisoner of Azkaban')">Add to Cart</button>
+              <button class="button" style="background :#1E3A5F;">Read Online</button>
+          </div>
+          <div class="book-card" data-price="533">
+            <img src="/potterheads/hp4.jpg" >
+            <h3>Harry Potter and the Goblet of Fire</h3>
+           
+            <p><strong>₹533</strong></p>
+            <button class="button" onclick="addToCart('Harry Potter and the Goblet of Fire')">Add to Cart</button>
+            <button class="button" style="background: #1E3A5F;">Read Online</button>
+        </div>
+        <div class="book-card" data-price="557">
+          <img src="/potterheads/hp5.jpg" >
+          <h3>Harry Potter and the Order of the Phoenix</h3>
+          
+          <p><strong>₹557</strong></p>
+          <button class="button" onclick="addToCart('Harry Potter and the Order of the Phoenix')">Add to Cart</button>
+          <button class="button" style="background: #1E3A5F;">Read Online</button>
+      </div>
+      <div class="book-card" data-price="299">
+        <img src="/potterheads/hp6.jpg" >
+        <h3>Harry Potter and the Half-Blood Prince</h3>
+        
+        <p><strong>₹299</strong></p>
+        <button class="button" onclick="addToCart('Harry Potter and the Half-Blood Prince')">Add to Cart</button>
+        <button class="button" style="background: #1E3A5F;">Read Online</button>
+
+    </div>
+    <div class="book-card" data-price="530">
+      <img src="/potterheads/hp7.webp" >
+      <h3>Harry Potter and the Deathly Hallows</h3>
+     
+      <p><strong>₹530</strong></p>
+      <button class="button" onclick="addToCart('Harry Potter and the Deathly Hallows')">Add to Cart</button>
+      <button class="button" style="background: #1E3A5F;">Read Online</button>
+  </div>
+  <div class="book-card" data-price="322">
+    <img src="/potterheads/hp8.jpg" >2
+    <h3>Harry Potter and the Cursed Child</h3>
+   
+    <p><strong>₹322</strong></p>
+    <button class="button" onclick="addToCart('Harry Potter and the Cursed Child')">Add to Cart</button>
+    <button class="button" style="background: #1E3A5F;">Read Online</button>
+</div>
+  
+     </div>   
+
+   
+    
+
+    
+    
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>About Us</h3>
+              <p>We are passionate about connecting readers with a diverse selection of titles across all genres, from bestsellers to hidden gems. Our mission is to inspire a love for reading by providing a curated collection that caters to every taste.</p>
+          </div>
+          
+          <div class="footer-section">
+              <h3 class="quicklink">Quick Links</h3>
+              <ul>
+                <a href="biblioupdate.html" > <li class="link">Home</li> </a>
+                <a href="fiction.html"><li class="link"> Categories</li> </a> 
+                <a href="awardwinners.html"> <li class="link">Award Winners</li> </a>
+                 <a href="authores.html"><li class="link">Authors</li> </a>
+                <a href="contact2.html" > <li class="link">Contact Us</li> </a>
+              </ul>
+          </div>
+          
+          <div class="footer-section">
+              <h3 class="contact">Contact</h3>
+              <ul>
+                  <li>Email: info@biblioshelf.org</li>
+                  <li>Phone: +91 9691094226</li>
+                  <li>Address: Arc Paradise, Mumbai</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="copyright">
+          <p>&copy; 2025 BiblioShelf. All rights reserved.</p>
+      </div>
+  </footer>
+  <script src="/scriptsproject/script1.js"></script>
+  <script src="/scriptsproject/potterheads.js"></script>
+  
+  
+
+</body>
+</html>

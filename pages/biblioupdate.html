@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>BIBLIOSHELF</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/stylesproject/biblioupdatestyles.css">
+
+</head>
+<script src="/scriptsproject/cart.js"></script>
+<body >
+
+     <!-- Navbar -->
+     <nav class="navbar">
+      <div class="nav-logo">
+        <a href="biblioupdate.html">
+        <img class="logo"  src="/logos/B2.JPG">
+    </a>
+    </div>
+    <div class="nav-search">
+        <input class="search-bar" type="text" placeholder="Search Books">
+        <button class="search-button">
+            <img class="search-icon" src="/icons/search.svg">
+        </button>
+    </div>
+    <div class="nav-links">
+        <a href="/pages/biblioupdate.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Categories</a>
+            <div class="dropdown-content">
+                <a href="/pages/fiction.html">Fiction </a>
+                <a href="/pages/romance.html">Romance</a>
+                <a href="/pages/potterheads.html">PotterHeads </a>
+                <a href="/pages/selfhelp.html"> Self Help </a>
+                
+            </div>
+        </div>
+        <div class="dropdown">
+        <a href="/pages/awardwinners.html">Award Winners</a>
+        </div>
+        
+        <a href="/pages/authores.html">Authors</a>
+        
+   
+        <a href="/pages/contact2.html">Contact Us</a>
+        <a href="/pages/cart.html">
+            <div id="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </a>
+        <button id="theme-toggle" class="mode">🌙 Dark Mode</button>
+    
+</div>
+</nav>
+
+<div class="banner-container">
+    <img src="/logos/gemini2.JPG" class="pic" alt="Book Banner">
+</div>
+        
+
+        <!-- Featured Books -->
+        <h2 class="bestsellers-title">Bestsellers</h2>
+        <div class="bestseller-container">
+        <section class="book-grid">
+            <div class="book-card">
+                <a href="https://www.bookswagon.com/book/atomic-habits-james-clear/9781847941831">
+
+            <img class="book1" src="/logos/atomic.jpg" >
+                </a>
+                <h2>Atomic Habits</h2>
+                <p>James Clear</p>
+                <p><strong>₹249</strong></p>
+                <button class="button" onclick="addToCart('book1','Atomic Habits', 249)">Add to Cart</button>
+                <a href="https://archive.org/details/atomic-habits-pdfdrive/page/n7/mode/1up">
+                <button class="button" style="background:#ac744f;">Read Online</button>
+            </a>
+                
+            </div>
+       
+
+            <div class="book-card">
+                <a href="https://www.bookswagon.com/book/too-good-true-prajakta-koli/9789365693393">
+
+                <img class="book2" src="/logos/good.webp" alt="1984">
+                </a>
+                <h2>Too Good to Be True</h2>
+                <p>Prajakta Koli</p>
+                <p><strong>₹350</strong></p>
+                <button class="button" onclick="addToCart('book 2','Too Good to be True', 350)">Add to Cart</button>
+                <a href="https://www.scribd.com/document/819916039/Prajakta-Koli-Too-Good-To-Be-True">
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </a>
+                
+            </div>
+            <div class="book-card">
+                <a href="https://www.theindianbookstore.in/products/the-alchemist-by-pauo-coelho?variant
+              =41160445001864&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm
+              _content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=Cj0KCQjws-S-BhD2ARIsA
+              LssG0bRyrm_mHwoxpuKrc6ojNWVwLhmGkOYTdqho7SrkaLKvOoPf2Tr_WEaAqThEALw_wcB">
+
+                <img class="book3" src="/logos/alchemist.webp" alt="To Kill a Mockingbird">
+                </a>
+                <h2>The Alchemist</h2>
+                <p>Paulo Coelho</p>
+                <p><strong>₹179</strong></p>
+                <button class="button" onclick="addToCart('book3','The Alchemist', 179)">Add to Cart</button>
+                <a href="https://books-library.net/files/books-library.online-12230111Ib9C3.pdf">
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </a>
+            </div>
+            <div class="book-card">
+                <a href="https://www.snapdeal.com/product/the-subtle-art-of-not/686281189461?lang=en">
+
+                <img class="book4" src="/logos/notgiving.webp" alt="1984">
+                </a>
+                <h3>The Subtle Art Of Not Giving F*ck</h3>
+                <p class="author">Mark Manson</p>
+                <p><strong>₹350</strong></p>
+                <button class="button" onclick="addToCart('book4','The Subtle Art Of Not Giving F*ck', 350)">Add to Cart</button>
+                <a href="https://nibmehub.com/opac-service/pdf/read/The%20Subtle%20Art%20of%20Not%20Giving%20a%20Fck%20A%20Counterintuitive%20Approach%20to%20Living%20a%20Good%20Life%20by%20Mark%20Manson%20(z-lib.org).pdf">
+                <button class="button" style="background:#ac744f;">Read Online</button>
+            </a>
+            </div>
+            <div class="book-card">
+                <img class="book5" src="/logos/art.webp" alt="1984">
+                <h2>The Art of Being Alone</h2>
+                <p>Renuka Gavrani</p>
+                <p><strong>₹186</strong></p>
+                <button class="button" onclick="addToCart('book5','The Art of Being Alone', 186)">Add to Cart</button>
+                <a href="https://archive.org/details/the-art-of-being-alone-solitude-is-my-home-loneliness-was-my-cage/page/n3/mode/1up">
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </a>
+            </div>
+            <div class="book-card">
+                <img class="book6" src="/logos/satanic.jpg" alt="1984">
+                <h2>The Satanic Verses</h2>
+                <p>Salman Rushdie</p>
+                <p><strong>₹370</strong></p>
+                <button class="button" onclick="addToCart('book6','The Satanic Verses', 370)">Add to Cart</button>
+                <a href="https://archive.org/details/wg826/page/n6/mode/1up">
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </a>
+            </div>
+            <div class="book-card">
+                <img class="book7" src="/logos/money.jpg" alt="1984">
+                <h3>The Psychology of Money</h3>
+                <p class="author">Morgan Housel</p>
+                <p><strong>₹287</strong></p>
+                <button class="button" onclick="addToCart('book7','The Psychology of Money', 287)">Add to Cart</button>
+                <a href="https://archive.org/details/the-psychology-of-money-morgan-housel-z-library-1">
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </a>
+            </div>
+            <div class="book-card">
+                <img class="book8" src="/logos/ends.webp" alt="1984">
+                <h2>It Ends With Us</h2>
+                <p>Colleen Hoover</p>
+                <p><strong>₹169</strong></p>
+                <button class="button" onclick="addToCart('book8','It Ends With Us', 169)">Add to Cart</button>
+                <a href="https://ia800402.us.archive.org/8/items/3_20240517_20240517_1505/It_Ends_With_Us_A_Novel_-_Colleen_Hoover.pdf">
+                <button class="button" style="background:#ac744f;">Read Online</button>
+            </a>
+            </div>
+        </section>
+    </div>
+</div>
+
+                         
+              
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We are passionate about connecting readers with a diverse selection of titles across all genres, from bestsellers to hidden gems. Our mission is to inspire a love for reading by providing a curated collection that caters to every taste.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="quicklink">Quick Links</h3>
+            <ul>
+                <a href="/pages/biblioupdate.html" > <li class="link">Home</li> </a>
+                <a href="/pages/fiction.html"><li class="link"> Categories</li> </a> 
+                <a href="/pages/awardwinners.html"> <li class="link">Award Winners</li> </a>
+                 <a href="/pages/authores.html"><li class="link">Authors</li> </a>
+                <a href="/pages/contact2.html" > <li class="link">Contact Us</li> </a>
+
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="contact">Contact</h3>
+            <ul>
+                <li>Email: info@biblioshelf.org</li>
+                <li>Phone: +91 9691094226</li>
+                <li>Address: Arc Paradise, Mumbai</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>&copy; 2025 BiblioShelf. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="/scriptsproject/script1.js"></script>
+<script src="/scriptsproject/scriptbiblioupdate.js"> </script>
+
+
+</body>
+</html>
+
+
+
+
+
+

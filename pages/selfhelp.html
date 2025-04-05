@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance - BiblioShelf</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="cart.js"></script>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesproject/self.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="/pages/biblioupdate.html">
+        <img class= "logo"  src= "/logos/B2.JPG">
+    </a>
+    </div>
+    <div class="nav-search">
+        <input class="search-bar" type="text" placeholder="Search Books">
+        <button class="search-button">
+            <img class="search-icon" src="/icons/search.svg">
+        </button>
+    </div>
+    <div class="nav-links">
+        <a href="/pages/biblioupdate.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Categories</a>
+            <div class="dropdown-content">
+                <a href="/pages/fiction.html">Fiction</a>
+                <a href="/pages/romance.html">Romance</a>
+                <a href="/pages/potterheads.html">PotterHeads</a>
+                <a href="/pages/selfhelp.html">Self Help</a>
+            </div>
+        </div>
+        <div class="dropdown">
+        <a href="/pages/awardwinners.html">Award Winners</a>
+        </div>
+        
+
+        <a href="/pages/authores.html">Authors</a>
+
+        <a href="/pages/contact2.html">Contact Us</a>
+        <a href="cart.html">
+            <div id="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </a>
+
+<button id="theme-toggle" class="mode">🌙 Dark Mode</button>
+    
+</div>
+</nav>
+
+
+
+  
+
+    <div class= " book-container">
+      
+        
+        <h2 class="section-title"> Self-Help </h2>
+        <div class="sorting-buttons">
+          <button id="sortAscending" class="hehe">Sort by Price (Low to High)</button>
+          <button id="sortDescending" class="hehe">Sort by Price (High to Low)</button>
+  
+      </div>
+  
+       
+        <div class="book-grid">
+            <div class="book-card" data-price="300">
+                <img src="/selfhelp/apart.webp" >
+                <h3>When Things Fall Apart</h3>
+                <p>Pema Chodron</p>
+                <p><strong>₹300</strong></p>
+                <button class="button" onclick="addToCart('When Things Fall Apart')">Add to Cart</button>
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </div>
+            <div class="book-card" data-price="499">
+                <img src="/selfhelp/breathe.webp" >
+                <h3>Breathe, you are alive!</h3>
+                <p> Thich Nhat Hanh</p>
+                <p><strong>₹499</strong></p>
+                <button class="button" onclick="addToCart('Breathe, you are alive!')">Add to Cart</button>
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </div>
+            <div class="book-card" data-price="262">
+              <img src="/selfhelp/five.webp" >
+              <h3>Your Next Five Moves</h3>
+              <p>Patrick Bet-David</p>
+              <p><strong>₹262</strong></p>
+              <button class="button" onclick="addToCart('Your Next Five Moves')">Add to Cart</button>
+              <button class="button" style="background: #ac744f;">Read Online</button>
+          </div>
+          <div class="book-card" data-price="982">
+            <img src="/selfhelp/notyou.webp" >
+            <h3>It's Not You</h3>
+            <p>Ramani Durvasula</p>
+            <p><strong>₹982</strong></p>
+            <button class="button" onclick="addToCart('Its Not You')">Add to Cart</button>
+            <button class="button" style="background: #ac744f;">Read Online</button>
+        </div>
+        <div class="book-card" data-price="300">
+          <img src="/selfhelp/ok.webp" >
+          <h3>I'm Ok, You're Ok</h3>
+          <p>Thomas A. Harris</p>
+          <p><strong>₹300</strong></p>
+          <button class="button" onclick="addToCart('Im Ok, Youre Ok')">Add to Cart</button>
+          <button class="button" style="background: #ac744f;">Read Online</button>
+      </div>
+      <div class="book-card" data-price="436">
+        <img src="/selfhelp/silence.webp" >
+        <h3>Silence</h3>
+        <p>Thich Nhat Hanh</p>
+        <p><strong>₹436</strong></p>
+        <button class="button" onclick="addToCart('Silence')">Add to Cart</button>
+        <button class="button" style="background: #ac744f;">Read Online</button>
+
+    </div>
+    <div class="book-card" data-price="168">
+      <img src="/selfhelp/stock.webp" >
+      <h3>How I made $2,000,000 in the Stock Market</h3>
+      <p>Nicolas Darvas</p>
+      <p><strong>₹168</strong></p>
+      <button class="button" onclick="addToCart('How I made $2,000,000 in the Stock Market')">Add to Cart</button>
+      <button class="button" style="background: #ac744f;">Read Online</button>
+  </div>
+  <div class="book-card" data-price="194">
+    <img src="/selfhelp/stop.webp" >
+    <h3>Stop Overthinking</h3>
+    <p>Nick Trenton</p>
+    <p><strong>₹194</strong></p>
+    <button class="button" onclick="addToCart('Stop Overthinking')">Add to Cart</button>
+    <button class="button" style="background: #ac744f;">Read Online</button>
+</div>
+<div class="book-card" data-price="850">
+  <img src="/selfhelp/worry.webp" >
+  <h3>Don't Worry</h3>
+  <p>Shunmyo Masuno</p>
+  <p><strong>₹850</strong></p>
+  <button class="button" onclick="addToCart('Dont Worry')">Add to Cart</button>
+  <button class="button" style="background: #ac744f;">Read Online</button>
+</div>
+     </div>   
+
+   
+    
+
+    
+    </div>
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>About Us</h3>
+              <p>We are passionate about connecting readers with a diverse selection of titles across all genres, from bestsellers to hidden gems. Our mission is to inspire a love for reading by providing a curated collection that caters to every taste.</p>
+          </div>
+          
+          <div class="footer-section">
+              <h3 class="quicklink">Quick Links</h3>
+              <ul>
+                <a href="biblioupdate.html" > <li class="link">Home</li> </a>
+                <a href="fiction.html"><li class="link"> Categories</li> </a> 
+                <a href="awardwinners.html"> <li class="link">Award Winners</li> </a>
+                 <a href="authores.html"><li class="link">Authors</li> </a>
+                <a href="contact2.html" > <li class="link">Contact Us</li> </a>
+  
+              </ul>
+          </div>
+          
+          <div class="footer-section">
+              <h3 class="contact">Contact</h3>
+              <ul>
+                  <li>Email: info@biblioshelf.org</li>
+                  <li>Phone: +91 9691094226</li>
+                  <li>Address: Arc Paradise, Mumbai</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="copyright">
+          <p>&copy; 2025 BiblioShelf. All rights reserved.</p>
+      </div>
+  </footer>
+  <script src="/scriptsproject/script1.js"></script>
+ <script src="/scriptsproject/scriptbiblioupdate.js"></script>
+</body>
+</html>

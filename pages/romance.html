@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance - BiblioShelf</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <script src="cart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/stylesproject/romance.css">
+   
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="biblioupdate.html">
+        <img class="logo"  src="/logos/B2.JPG">
+      </a>
+    </div>
+    <div class="nav-search">
+        <input class="search-bar" type="text" placeholder="Search Books">
+        <button class="search-button">
+            <img class="search-icon" src="/icons/search.svg">
+        </button>
+    </div>
+    <div class="nav-links">
+        <a href="biblioupdate.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Categories</a>
+            <div class="dropdown-content">
+                <a href="fiction.html">Fiction</a>
+                <a href="romance.html">Romance</a>
+                <a href="potterheads.html">PotterHeads </a>
+                <a href="selfhelp.html">Self Help </a>
+            </div>
+        </div>
+        <div class="dropdown">
+        <a href="awardwinners.html">Award Winners</a>
+        </div>
+       
+        <a href="authores.html">Authors</a>
+            
+       
+    
+        <a href="contact2.html">Contact Us</a>
+        <a href="cart.html">
+          <div id="cart-icon">
+              🛒 <span id="cart-count">0</span>
+          </div>
+      </a>
+<button id="theme-toggle" class="mode">🌙 Dark Mode</button>
+    
+</div>
+</nav>
+
+
+
+  
+
+    <div class= " book-container">
+      
+      
+        <h2 class="section-title"> Romance  </h2>
+        <div class="sorting-buttons">
+          <button id="sortAscending" class="hehe">Sort by Price (Low to High)</button>
+          <button id="sortDescending" class="hehe">Sort by Price (High to Low)</button>
+  
+      </div>
+  
+       
+        <div class="book-grid" >
+            <div class="book-card" data-price="249">
+                <img src="/romance/adeline.jpg" >
+                <h3>Hauting Adeline</h3>
+                <p>H D Cartlon</p>
+                <p><strong>₹249</strong></p>
+                <button class="button" onclick="addToCart('Hauting Adeline')">Add to Cart</button>
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </div>
+            <div class="book-card" data-price="580">
+                <img src="/romance/black.webp" >
+                <h3>Black Ties White Lies</h3>
+                <p> Kat Singleton</p>
+                <p><strong>₹580</strong></p>
+                <button class="button" onclick="addToCart('Black Ties White Lies')">Add to Cart</button>
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </div>
+            <div class="book-card" data-price="345">
+              <img src="/romance/fake.jpg" >
+              <h3>The Fake Out</h3>
+              <p>Stephaine Archer</p>
+              <p><strong>₹345</strong></p>
+              <button class="button" onclick="addToCart('The Fake Out')">Add to Cart</button>
+              <button class="button" style="background: #ac744f;">Read Online</button>
+          </div>
+          <div class="book-card" data-price="195">
+            <img src="/romance/LoveHypothesis.webp" >
+            <h3>The Love Hypothesis</h3>
+            <p>Ali Hazelwood</p>
+            <p><strong>₹195</strong></p>
+            <button class="button" onclick="addToCart('The Love Hypothesis')">Add to Cart</button>
+            <button class="button" style="background: #ac744f;">Read Online</button>
+        </div>
+        <div class="book-card" data-price="303">
+          <img src="/romance/regretting.webp" >
+          <h3>Regretting You</h3>
+          <p>Colleen Hoover</p>
+          <p><strong>₹303</strong></p>
+          <button class="button" onclick="addToCart('Regretting You')">Add to Cart</button>
+          <button class="button" style="background: #ac744f;">Read Online</button>
+      </div>
+
+      <div class="book-card" data-price="212">
+        <img src="/romance/reminders.webp" >
+        <h3>Reminders Of Him</h3>
+        <p>Colleen Hoover</p>
+        <p><strong>₹212</strong></p>
+        <button class="button" onclick="addToCart('Reminders Of Him')">Add to Cart</button>
+        <button class="button" style="background: #ac744f;">Read Online</button>
+
+    </div>
+    <div class="book-card" data-price="449">
+      <img src="/romance/souls.webp" >
+      <h3>The Fabrics of our Souls</h3>
+      <p>K.M Moronova</p>
+      <p><strong>₹449</strong></p>
+      <button class="button" onclick="addToCart('The Fabrics of our Souls')">Add to Cart</button>
+      <button class="button" style="background: #ac744f;">Read Online</button>
+  </div>
+  <div class="book-card" data-price="428">
+    <img src="/romance/spanish.webp" >
+    <h3>The Spanish Love Deception</h3>
+    <p>Elena Armas</p>
+    <p><strong>₹428</strong></p>
+    <button class="button" onclick="addToCart('The Spanish Love Deception')">Add to Cart</button>
+    <button class="button" style="background: #ac744f;">Read Online</button>
+</div>
+<div class="book-card" data-price="200">
+  <img src="/romance/twisted.webp" >
+  <h3>Twisted Love</h3>
+  <p>Ana Huang</p>
+  <p><strong>₹200</strong></p>
+  <button class="button" onclick="addToCart('Twisted Love')">Add to Cart</button>
+  <button class="button" style="background: #ac744f;">Read Online</button>
+</div>
+     </div>   
+
+   
+    
+
+    
+    </div>
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>About Us</h3>
+              <p>We are passionate about connecting readers with a diverse selection of titles across all genres, from bestsellers to hidden gems. Our mission is to inspire a love for reading by providing a curated collection that caters to every taste.</p>
+          </div>
+          
+          <div class="footer-section">
+              <h3 class="quicklink">Quick Links</h3>
+              <ul>
+                <a href="biblioupdate.html" > <li class="link">Home</li> </a>
+                <a href="fiction.html"><li class="link"> Categories</li> </a> 
+                <a href="awardwinners.html"> <li class="link">Award Winners</li> </a>
+                 <a href="authores.html"><li class="link">Authors</li> </a>
+                <a href="contact2.html" > <li class="link">Contact Us</li> </a>
+  
+              </ul>
+          </div>
+          
+          <div class="footer-section">
+              <h3 class="contact">Contact</h3>
+              <ul>
+                  <li>Email: info@biblioshelf.org</li>
+                  <li>Phone: +91 9691094226</li>
+                  <li>Address: Arc Paradise, Mumbai</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="copyright">
+          <p>&copy; 2025 BiblioShelf. All rights reserved.</p>
+      </div>
+  </footer>
+  <script src="/scriptsproject/script1.js"></script>
+  <script src="/scriptsproject/romance.js"></script>
+
+  
+
+</body>
+</html>

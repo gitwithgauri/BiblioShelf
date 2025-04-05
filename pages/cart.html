@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="/stylesproject/cart.css">
+</head>
+
+
+
+<body>
+
+    <div class="cart-container">
+         <h1>🛒 Your Cart 🛒 </h1> 
+        <a href="biblioupdate.html" class="back-link">← Back to Store</a>
+
+        <div id="cart-items" class="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+        
+        <button class="clear-cart-btn"  onclick="triggerBookConfetti()">Buy Now</button>
+        <button onclick="clearCart()" class="clear-cart-btn">Clear Cart</button>
+    </div>
+
+ <script src="/scriptsproject/cart.js"></script>
+
+ <script src="/scriptsproject/script1.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+
+function triggerBookConfetti() {
+  confetti({
+      particleCount: 120,
+      spread: 100,
+      origin: { y: 0.6 }
+  });
+
+  // Optional: Add a delay or animation before clearing cart or redirecting
+  setTimeout(() => {
+      clearCart();
+      alert("Thanks for your purchase!");
+  }, 1000);
+}
+
+
+</script>
+
+</body>
+</html>

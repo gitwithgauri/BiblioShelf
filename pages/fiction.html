@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiction - BiblioShelf</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="/stylesproject/fiction.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="biblioupdate.html">
+        <img class="logo"  src="/logos/B2.JPG">
+    </a>
+    </div>
+    <div class="nav-search">
+        <input class="search-bar" type="text" placeholder="Search Books">
+        <button class="search-button">
+            <img class="search-icon" src="/icons/search.svg">
+        </button>
+    </div>
+    <div class="nav-links">
+        <a href="biblioupdate.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Categories</a>
+            <div class="dropdown-content">
+                <a href="fiction.html">Fiction</a>
+                <a href="romance.html">Romance</a>
+                <a href="potterheads.html">PotterHeads </a>
+                <a href="selfhelp.html">Self Help </a>
+            </div>
+        </div>
+        <div class="dropdown">
+        <a href="awardwinners.html">Award Winners</a>
+        
+            
+        </div>
+        
+        <a href="authores.html">Authors</a>
+       
+    
+        <a href="contact2.html">Contact Us</a>
+        <a href="cart.html">
+            <div id="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </a> 
+
+<button id="theme-toggle" class="mode">🌙 Dark Mode</button>
+    
+</div>
+</nav>
+
+
+
+  
+
+    <div class= " book-container">
+      
+      
+        <h2 class="section-title"> Teens Fiction  </h2>
+        <div class="sorting-buttons">
+          <button id="sortAscending" class="hehe">Sort by Price (Low to High)</button>
+          <button id="sortDescending" class="hehe">Sort by Price (High to Low)</button>
+  
+      </div>
+  
+       
+        <div class="book-grid" >
+            <div class="book-card" data-price="189">
+                <img src="/fiction/alice.webp" >
+                <h3 >Alice in Wonderland</h3>
+                <p>Lewis Carrol</p>
+                <p><strong>₹189</strong></p>
+                <button class="button" onclick="addToCart('Alice in Wonderland')">Add to Cart</button>
+                <a href="https://www.adobe.com/be_en/active-use/pdf/Alice_in_Wonderland.pdf">
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </a>
+                <p id="message"></p>
+            </div>
+            <div class="book-card" data-price="255">
+                <img src="/fiction/alaska.webp" >
+                <h3 >Looking For Alaska</h3>
+                <p>John Green</p>
+                <p><strong>₹255</strong></p>
+                <button class="button" onclick="addToCart('Looking For Alaska')">Add to Cart</button>
+                <a href="https://books-library.net/files/books-library.online-01100750Jf4T1.pdf">
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </a>
+                <p id="message"></p>
+            </div>
+            <div class="book-card" data-price="129">
+              <img src="/fiction/angryriver.jpg" >
+              <h3 >Angry River</h3>
+              <p>Ruskin Bond</p>
+              <p><strong>₹129</strong></p>
+              <button class="button" onclick="addToCart('Angry River')">Add to Cart</button>
+              <a href="https://archive.org/details/angryriver0000bond">
+              <button class="button" style="background: #ac744f;">Read Online</button>
+            </a>
+              <p id="message"></p>
+          </div>
+          <div class="book-card" data-price="249">
+            <img src="/fiction/bfg.webp" >
+            <h3 >The BFG</h3>
+            <p>Roald Dahl</p>
+            <p><strong>₹249</strong></p>
+            <button class="button" onclick="addToCart('The BFG')">Add to Cart</button>
+            <button class="button" style="background: #ac744f;">Read Online</button>
+            <p id="message"></p>
+        </div>
+        <div class="book-card" data-price="253">
+          <img src="/fiction/dehra.webp" >
+          <h3 >Our Trees Still Grow in Dehra</h3>
+          <p>Ruskin Bond</p>
+          <p><strong>₹253</strong></p>
+          <button class="button" onclick="addToCart('Our Trees Still Grow in Dehra')">Add to Cart</button>
+          <a href="https://archive.org/details/ourtreesstillgro0000bond">
+          <button class="button" style="background: #ac744f;">Read Online</button>
+        </a>
+          <p id="message"></p>
+      </div>
+      <div class="book-card" data-price="334">
+        <img src="/fiction/fire.webp" >
+        <h3 >Wings Of Fire</h3>
+        <p>APJ Abdul Kalam</p>
+        <p><strong>₹334</strong></p>
+        <button class="button" onclick="addToCart('Wings Of Fire')">Add to Cart</button>
+        <button class="button" style="background: #ac744f;">Read Online</button>
+        <p id="message"></p>
+
+    </div>
+    <div class="book-card" data-price="168">
+      <img src="/fiction/grandma.webp" >
+      <h3>Grandma's Bag of Stories</h3>
+      <p>Sudha Murty</p>
+      <p><strong>₹168</strong></p>
+      <button class="button" onclick="addToCart('Grandma bag of stories')">Add to Cart</button>
+      <a href="https://archive.org/details/howitaughtmygran0000murt">
+      <button class="button" style="background: #ac744f;">Read Online</button>
+    </a>
+      <p id="message"></p>
+  </div>
+  <div class="book-card" data-price="194">
+    <img src="/fiction/read.webp" >
+    <h3>How I taught my Grandmother to read</h3>
+    <p>Sudha Murty</p>
+    <p><strong>₹194</strong></p>
+    <button class="button" onclick="addToCart('How I taught my grandmother to read')">Add to Cart</button>
+    <button class="button" style="background: #ac744f;">Read Online</button>
+</div>
+<div class="book-card" data-price="850">
+  <img src="/fiction/ruin.webp" >
+  <h3>Ruin and Rising</h3>
+  <p>Leigh Bardugo</p>
+  <p><strong>₹850</strong></p>
+  <button class="button" onclick="addToCart('Ruin and Rising')">Add to Cart</button>
+  <button class="button" style="background: #ac744f;">Read Online</button>
+</div>
+     </div>   
+
+    <h2 class="section-title">Contemporary Fiction </h2>
+    
+        <div class="book-grid">
+            <div class="book-card" data-price="257">
+                <img src="/fiction/ove.jpg" >
+                <h3>A Man Called Ove</h3>
+                <p>Fredrik Backman</p>
+                <p><strong>₹257</strong></p>
+                <button class="button" onclick="addToCart('A Man Called Ove')">Add to Cart</button>
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </div>
+            <div class="book-card" data-price="269">
+                <img src="/fiction/black.jpg" >
+                <h3>At Night All Blood Is Black</h3>
+                <p>David Diop</p>
+                <p><strong>₹269</strong></p>
+                <button class="button" onclick="addToCart('At Night All Blood Is Black')">Add to Cart</button>
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </div>
+            <div class="book-card" data-price="346">
+              <img src="/fiction/malibu.jpg" >
+              <h3>Malibu Rising</h3>
+              <p>Taylor Jenkins Reid</p>
+              <p><strong>₹346</strong></p>
+              <button class="button">Add to Cart</button>
+              <button class="button" style="background: #ac744f;">Read Online</button>
+          </div>
+          <div class="book-card" data-price="369">
+            <img src="/fiction/Ravan.webp" >
+            <h3>Raavan: Enemy of Aryavarta</h3>
+            <p>Amish</p>
+            <p><strong>₹369</strong></p>
+            <button class="button" onclick="addToCart('Raavan: Enemy of Aryavarta')">Add to Cart</button>
+            <button class="button" style="background: #ac744f;">Read Online</button>
+        </div>
+        <div class="book-card" data-price="326">
+          <img src="/fiction/Whereabots.jpg" >
+          <h3>Whereabouts</h3>
+          <p>Jhumpa Lahiri</p>
+          <p><strong>₹326</strong></p>
+          <button class="button">Add to Cart</button>
+          <a href="https://online.fliphtml5.com/dksru/kjia/#p=1">
+          <button class="button" style="background: #ac744f;">Read Online</button>
+        </a>
+        </div>
+      <div class="book-card" data-price="259">
+        <img src="/fiction/Suheldev.webp" >
+        <h3>SuhelDev: The King who saved Indra</h3>
+        <p>Amish</p>
+        <p><strong>₹259</strong></p>
+        <button class="button" onclick="addToCart('SuhelDev: The King who saved Indra')">Add to Cart</button>
+        <button class="button" style="background: #ac744f;">Read Online</button>
+
+    </div>
+    <div class="book-card" data-price="379">
+      <img src="/fiction/light.webp" >
+      <h3>All The Light We Cannot See</h3>
+      <p>Anthony Doerr</p>
+      <p><strong>₹379</strong></p>
+      <button class="button" onclick="addToCart('All The Light We Cannot See')">Add to Cart</button>
+      <button class="button" style="background: #ac744f;">Read Online</button>
+  </div>
+  <div class="book-card" data-price="290">
+    <img src="/fiction/god.webp" >
+    <h3>The God Of Small Things</h3>
+    <p>Arundhati Roy</p>
+    <p><strong>₹290</strong></p>
+    <button class="button" onclick="addToCart('The God Of Small Things')">Add to Cart</button>
+    <a href="https://books.google.co.in/books?id=0mhCpXdzLt4C&printsec=frontcover&redir_esc=y#v=onepage&q&f=false">
+    <button class="button" style="background: #ac744f;">Read Online</button>
+</a>
+</div>
+<div class="book-card" data-price="379">
+  <img src="/fiction/men.webp" >
+  <h3>Men Without Women</h3>
+  <p>Murakami</p>
+  <p><strong>₹379</strong></p>
+  <button class="button" onclick="addToCart('It Ends With Us')">Add to Cart</button>
+  <button class="button" style="background: #ac744f;">Read Online</button>
+</div>
+</div>
+
+<h2 class="section-title">Crimes, Thriller and Mystery</h2>
+
+        <div class="book-grid">
+            <div class="book-card" data-price="222">
+                <img src="/fiction/family.webp" >
+                <h3>How to Kill Your Family</h3>
+                <p>Bella Mackie</p>
+                <p><strong>₹222</strong></p>
+                <button class="button" onclick="addToCart('How to Kill Your Family')">Add to Cart</button>
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </div>
+            <div class="book-card" data-price="119">
+                <img src="/fiction/machine.webp" >
+                <h3>The Time Machine</h3>
+                <p>H.G Wells</p>
+                <p><strong>₹119</strong></p>
+                <button class="button" onclick="addToCart('It Ends With Us')">Add to Cart</button>
+                <a href="https://archive.org/details/h-g-wells_the-time-machine">
+                <button class="button" style="background: #ac744f;">Read Online</button>
+            </a>
+            </div>
+            <div class="book-card" data-price="219">
+              <img src="/fiction/ghost.webp" >
+              <h3>Selected Ghost Stories</h3>
+              <p>Lexicon</p>
+              <p><strong>₹219</strong></p>
+              <button class="button" onclick="addToCart('Selected Ghost Stories')">Add to Cart</button>
+              <button class="button" style="background: #ac744f;">Read Online</button>
+          </div>
+          <div class="book-card" data-price="299">
+            <img src="/fiction/blood.webp" >
+            <h3>Written In Blood</h3>
+            <p>Ankit Verma</p>
+            <p><strong>₹299</strong></p>
+            <button class="button" onclick="addToCart('Written In Blood')">Add to Cart</button>
+            <button class="button" style="background: #ac744f;">Read Online</button>
+        </div>
+        <div class="book-card" data-price="259">
+          <img src="/fiction/none.jpg" >
+          <h3>And Then There Were None</h3>
+          <p>Agatha Christie</p>
+          <p><strong>₹259</strong></p>
+          <button class="button" onclick="addToCart('And Then There Were None')">Add to Cart</button>
+          <a href="https://archive.org/details/AndThenThereWereNoneByAgathaChristie_201810">
+          <button class="button" style="background: #ac744f;">Read Online</button>
+        </a>
+        </div>
+      <div class="book-card" data-price="306">
+        <img src="/fiction/maidens.webp" >
+        <h3>The Maidens</h3>
+        <p>Alex Michaelides</p>
+        <p><strong>₹306</strong></p>
+        <button class="button" onclick="addToCart('The Maidens')">Add to Cart</button>
+        <button class="button" style="background: #ac744f;">Read Online</button>
+
+    </div>
+    <div class="book-card" data-price="523">
+      <img src="/fiction/villians.webp" >
+      <h3>If We Were Villians</h3>
+      <p>M.L. Rio</p>
+      <p><strong>₹523</strong></p>
+      <button class="button" onclick="addToCart('If We Were Villians')">Add to Cart</button>
+      <button class="button" style="background: #ac744f;">Read Online</button>
+  </div>
+  <div class="book-card" data-price="258">
+    <img src="/fiction/silent.webp" >
+    <h3>The Silent Patient</h3>
+    <p>Alex Michaelides</p>
+    <p><strong>₹258</strong></p>
+    <a href="https://online.fliphtml5.com/ovtbw/amdg/#p=1">
+    <button class="button" onclick="addToCart('The Silent Patient')">Add to Cart</button>
+    <button class="button" style="background: #ac744f;">Read Online</button>
+</a>
+</div>
+<div class="book-card" data-price="255">
+  <img src="/fiction/Verity.webp" >
+  <h3>Verity</h3>
+  <p>Colleen Hoover</p>
+  <p><strong>₹255</strong></p>
+  <button class="button" onclick="addToCart('Verity')">Add to Cart</button>
+  <button class="button" style="background: #ac744f;">Read Online</button>
+</div>
+</div>
+    
+
+    
+    </div>
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>About Us</h3>
+              <p>We are passionate about connecting readers with a diverse selection of titles across all genres, from bestsellers to hidden gems. Our mission is to inspire a love for reading by providing a curated collection that caters to every taste.</p>
+          </div>
+          
+          <div class="footer-section">
+              <h3 class="quicklink">Quick Links</h3>
+              <ul>
+                <a href="biblioupdate.html" > <li class="link">Home</li> </a>
+                <a href="fiction.html"><li class="link"> Categories</li> </a> 
+                <a href="awardwinners.html"> <li class="link">Award Winners</li> </a>
+                 <a href="authores.html"><li class="link">Authors</li> </a>
+                <a href="contact2.html" > <li class="link">Contact Us</li> </a>
+              </ul>
+          </div>
+          
+          <div class="footer-section">
+              <h3 class="contact">Contact</h3>
+              <ul>
+                  <li>Email: info@biblioshelf.org</li>
+                  <li>Phone: +91 9691094226</li>
+                  <li>Address: Arc Paradise, Mumbai</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="copyright">
+          <p>&copy; 2025 BiblioShelf. All rights reserved.</p>
+      </div>
+  </footer>
+  <script src="/scriptsproject/script1.js"></script>
+  <script src="/scriptsproject/fiction.js"></script>
+
+  
+  
+
+</body>
+</html>
